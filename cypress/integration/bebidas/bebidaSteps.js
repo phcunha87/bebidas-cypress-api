@@ -42,8 +42,8 @@ Then(/^valido os dados de retorno da bebida cadastrada$/, () => {
 
 When(/^envio a requisicao para listar a bebida$/, () => {
 	cy.request({ 
-		method:'GET',
-		url: "/bebidas"	
+		method:'GET' ,
+		url: "/bebidas",
 	}).as('response')
 });
 
@@ -52,6 +52,8 @@ Then(/^recebo o status 200$/, () => {
 		expect(res.status).to.be.equal(200)
 	})
 });
+
+
 
 When(/^envio a requisicao para editar a bebida$/, () => {
 	cy.request({
