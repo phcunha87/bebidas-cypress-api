@@ -25,11 +25,20 @@ When(/^envio a requisicao cadastrar a bebida$/, () => {
 Then(/^recebo o status 201$/, () => {
 	cy.get('@response').then(res=> {
 		expect(res.status).to.be.equal(201)
+		
+	})
+});
+
+
+Then(/^valido os dados de retorno da bebida cadastrada$/, () => {
+	cy.get('@response').then(res=> {
+		expect(res.body).to.have.property('id')
 		expect(res.body).to.have.property('nome','Cerveja da boa')
 		expect(res.body).to.have.property('quantidade',15)
 		expect(res.body).to.have.property('valor',19.00)
 	})
 });
+
 
 When(/^envio a requisicao para listar a bebida$/, () => {
 	cy.request({ 

@@ -12,6 +12,7 @@ Dado  endpoint
 Cenario: Deve cadastrar bebida
 Quando envio a requisicao cadastrar a bebida
 Entao recebo o status 201
+E valido os dados de retorno da bebida cadastrada
 
 Cenario: Deve listar bebida
 Quando envio a requisicao para listar a bebida

@@ -1,7 +1,16 @@
 {
 
     "testFiles": "**/*.feature",
-    "baseUrl" :"http://localhost:8080/api"
+    "baseUrl" :"http://localhost:8080/api",
+    
+        "reporter": "mochawesome",
+        "reporterOptions": {
+           "reportDir": "cypress/results",
+           "overwrite": false,
+           "html": false,
+           "json": true
+        }
+     
     
 
 }
