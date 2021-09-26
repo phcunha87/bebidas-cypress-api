@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test":"cypress run cypress/integration/",
+    "test:api":"cypress run cypress/integration/",
     "cypress:open": "cypress open"
     
   },
