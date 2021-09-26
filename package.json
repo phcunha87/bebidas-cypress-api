@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run cypress/integration/",
+    "test":"cypress run cypress/integration/",
     "cypress:open": "cypress open",
     "test:chrome": "cypress run --browser chrome --no-exit"
   },
