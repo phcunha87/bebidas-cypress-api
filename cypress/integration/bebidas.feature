@@ -6,7 +6,7 @@ Funcionalidade: Bebidas
 Como usuario, desejo cadastrar, 
 editar, deletar e listar Bebidas
 
-Contexto: Background name
+Contexto: 
 Dado  endpoint
 
 @cadastrarBebida
