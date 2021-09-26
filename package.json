@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test":"cypress run cypress/integration/",
-    "cypress:open": "cypress open",
-    "test:chrome": "cypress run --browser chrome --no-exit"
+    "cypress:open": "cypress open"
+    
   },
   "keywords": [],
   "author": "",
