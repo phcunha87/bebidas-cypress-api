@@ -1,0 +1,10 @@
+pipeline{
+    agent any
+        stages {
+            stage('API TESTES') {
+                steps {
+                    bat 'npm run test'
+                }
+            }
+        }
+}
